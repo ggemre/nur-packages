@@ -4,7 +4,6 @@
   fetchFromGitHub,
   ncurses,
 }:
-
 rustPlatform.buildRustPackage rec {
   pname = "stacklet";
   version = "1.0.1";
@@ -13,7 +12,7 @@ rustPlatform.buildRustPackage rec {
     owner = "ggemre";
     repo = pname;
     rev = version;
-  sha256 = "0zfm4v6hnzjgcn8566frcixqz8y8w9k0yjhx8fvakyagnbscvvbk";
+    sha256 = "0zfm4v6hnzjgcn8566frcixqz8y8w9k0yjhx8fvakyagnbscvvbk";
   };
 
   cargoHash = "sha256-SUt4uvs7iUYO480z4qODOc06biwnHXiwVdmuAXDMTjg=";
