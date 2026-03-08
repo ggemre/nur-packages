@@ -26,12 +26,12 @@
 in
   stdenv.mkDerivation {
     pname = "mango";
-    version = "git";
+    version = "wl-only-git";
 
     src = fetchFromGitHub {
       owner = "mangowm";
       repo = "mango";
-      rev = "wl-only";
+      rev = "8c8b4b34df624cd19f2f9ee294b58179ff20de81";
       hash = "sha256-QgwiRNbM20mb3mluFSgAKXMb/7s2lscv49mTv0CRLGw=";
     };
 
