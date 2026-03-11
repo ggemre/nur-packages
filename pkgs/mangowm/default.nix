@@ -65,7 +65,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   passthru = {
     providedSessions = ["mango"];
-    updateScript = nix-update-script { };
+    updateScript = nix-update-script {};
   };
 
   meta = {

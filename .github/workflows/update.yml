@@ -23,12 +23,18 @@ jobs:
 
       - name: Find packages with updateScript
         run: |
-          nix eval --json .#packages.x86_64-linux \
-            | jq -r '
-                to_entries[]
-                | select(.value.passthru.updateScript != null)
-                | .key
-              ' > packages.txt
+          nix eval --json \
+            --apply 'pkgs:
+              builtins.mapAttrs
+                (name: pkg: pkg.passthru.updateScript or null)
+                pkgs
+            ' \
+            .#packages.x86_64-linux \
+          | jq -r '
+              to_entries[]
+              | select(.value != null)
+              | .key
+            ' > packages.txt
 
       - name: Update packages individually
         run: |
