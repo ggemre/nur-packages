@@ -6,7 +6,8 @@
 
 ## Packages:
 
-| Name | Program | Description |
-| ---- | ------- | ----------- |
-| alejandra-spaced | alejandra-4.0.0 | The Alejandra formatter with spaces around elements. |
+| Name | Description | Notes |
+| ---- | ----------- | ----- |
+| alejandra-spaced | The Alejandra formatter with spaces around elements. | |
+| mangowm | A streamlined but feature-rich Wayland compositor. | If you don't want to use their nightly flake. |
 
