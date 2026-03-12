@@ -1,8 +1,9 @@
-# nur-packages
-
-**My personal [NUR](https://github.com/nix-community/NUR) repository**
+# Packages for the NUR
 
 ![Build & Distribute](https://github.com/ggemre/nur-packages/workflows/Build%20and%20distribute/badge.svg)
+
+* Learn more about the [NUR](https://github.com/nix-community/NUR).
+* Open an [issue](https://github.com/ggemre/nur-packages/issues) if you need to contact me.
 
 ## Packages:
 
