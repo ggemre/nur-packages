@@ -7,16 +7,16 @@
 }:
 rustPlatform.buildRustPackage rec {
   pname = "stacklet";
-  version = "0.1.0";
+  version = "1.0.1";
 
   src = fetchFromGitHub {
     owner = "ggemre";
     repo = pname;
     rev = version;
-    hash = "sha256-Y9egeqmsX7RI4wVb34xNNtYIz/2ZlSl10uJSnTm8qnc=";
+    hash = "sha256-c+3N9LJP+am2Qx1KD2biyKOPe2TZGVOQZU9+C80m1X0=";
   };
 
-  cargoHash = "sha256-imZsN0Sx7Hq9l298UkJPSmEOwRSx3dDfMbQSivx9PC4=";
+  cargoHash = "sha256-SUt4uvs7iUYO480z4qODOc06biwnHXiwVdmuAXDMTjg=";
   buildInputs = [ncurses];
 
   meta = with lib; {
